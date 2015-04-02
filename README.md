@@ -1,5 +1,3 @@
-# Normality Zero's 2014 Aerial Assist Robot Code
-
 ## who
 
 This code is my baby.
