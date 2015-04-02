@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.wpi.first.wpilibj.templates.subsystems;
+
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.Talon;
+import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.templates.RobotMap;
+
+/**
+ *
+ * @author Robotics
+ */
+public class Winch extends Subsystem {
+    // Put methods for controlling this subsystem
+    // here. Call these from Commands.
+    
+    Talon _motor = new Talon(RobotMap.PORT_WINCH);
+    DigitalInput _limSwitch = new DigitalInput(RobotMap.PORT_WINCH_LIMIT);
+
+    public void initDefaultCommand() {
+        // Set the default command for a subsystem here.
+        //setDefaultCommand(new MySpecialCommand());
+    }
+    
+    public boolean isLimSwitch() {
+        return _limSwitch.get();
+    }
+    
+    public void setWinch(double val) {
+        _motor.set(val);
+    }
+    
+    public void stopWinch() {
+        _motor.set(0);
+    }
+}
