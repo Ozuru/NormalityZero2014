@@ -1,12 +1,3 @@
-## who
-
-This code is my baby.
-
 ## what
 
-This is simply a repository containing the rewritten code for our robot from 2014's challenge of Aerial Assist. 
-
-## why
-
-The programming laptop used for the majority of the programming was stolen and a neither suitable nor recent backup could be found. I'm a fan of keeping robots from the previous years alive and running so I chose to rewrite the code, this time in command-based rather than iterative. 
-
+This is simply a repository containing the rewritten code for Normality Zero's 2014 robot that competed in Aerial Assist. This is written in Java and uses the command-based template. This was the first project we undertook while attempting to learn command-based.
